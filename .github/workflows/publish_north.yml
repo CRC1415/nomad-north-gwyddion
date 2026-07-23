@@ -11,7 +11,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_TAG: main
-  NORTH_TOOL_DIR: src/nomad_north_gwyddion/north_tools/my_north_tool
+  NORTH_TOOL_DIR: src/nomad_north_gwyddion/north_tools/gwyddion
 
 permissions:
   packages: write
@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   build:
-    name: my_north_tool image
+    name: gwyddion image
     runs-on: ubuntu-latest
     outputs:
       tags: ${{ steps.meta.outputs.tags }} # list
@@ -62,7 +62,7 @@ jobs:
 
       # https://docs.docker.com/build/ci/github-actions/share-image-jobs/
       # https://github.com/docker/build-push-action
-      - name: Build and publish my_north_tool image
+      - name: Build and publish gwyddion image
         uses: docker/build-push-action@v6
         with:
           context: .
