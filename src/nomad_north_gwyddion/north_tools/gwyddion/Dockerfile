@@ -22,9 +22,10 @@ RUN apt update \
 # Install main packages
 RUN apt-get update && apt-get install -y \
     gwyddion \
-    python \
-    python-gtk2 \
-    xvfb
+    python3 \
+    python3-gi \
+    xvfb \
+ && rm -rf /var/lib/apt/lists/*
 
 # Required for gwyutils
 ENV PYTHONPATH "${PYTHONPATH}:/usr/share/gwyddion/pygwy"
@@ -35,9 +36,9 @@ USER ${NB_UID}
 WORKDIR "${HOME}/gwyddion"
 
 # 3.5.8 is the latest version, was released in 2022, maybe feature complete
-RUN wget https://jp-minerals.org/vesta/archives/3.5.8/VESTA-gtk3.tar.bz2 \
- && tar -xvf VESTA-gtk3.tar.bz2 \
- && rm -f VESTA-gtk3.tar.bz2
+#RUN wget https://jp-minerals.org/vesta/archives/3.5.8/VESTA-gtk3.tar.bz2 \
+# && tar -xvf VESTA-gtk3.tar.bz2 \
+# && rm -f VESTA-gtk3.tar.bz2
 
 WORKDIR "${HOME}"
 
