@@ -133,7 +133,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.entry-points.'nomad.plugin']
-north_entry_point = "nomad_north_gwyddion.north_tools:north_entry_point"
+north_entry_point = "nomad_north_gwyddion.north_tools:gwyddion"
 
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues
