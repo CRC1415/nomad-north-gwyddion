@@ -1,5 +1,5 @@
 from nomad.config.models.north import NORTHTool
-from nomad.config.models.plugins import NORTHToolEntryPoint
+from nomad.config.models.plugins import NorthToolEntryPoint
 
 gwyddion_north_tool = NORTHTool(
     short_description='Jupyter Notebook server in NOMAD NORTH for NOMAD plugin nomad-north-gwyddion.',
@@ -24,7 +24,7 @@ gwyddion_north_tool = NORTHTool(
     display_name='gwyddion',
 )
 
-gwyddion = NORTHToolEntryPoint(
+gwyddion = NorthToolEntryPoint(
     id_url_safe='gwyddion',
     north_tool=gwyddion_north_tool,
 )
