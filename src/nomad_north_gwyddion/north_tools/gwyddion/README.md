@@ -1,10 +1,10 @@
-# my_north_tool - NORTH tool
+# gwyddion - NORTH tool
 
 This directory contains the configuration and a minimal Dockerfile template for defining a NORTH (NOMAD Remote Tools Hub) tool.
 
 ## Quick start
 
-The my_north_tool NORTH tool provides a containerized environment defined in `NORTHtool` definition, `NORTHToolEntryPoint`, and Dockerfile.
+The gwyddion NORTH tool provides a containerized environment defined in `NORTHtool` definition, `NORTHToolEntryPoint`, and Dockerfile.
 
 ## Base Image
 
@@ -26,7 +26,7 @@ Select the appropriate base image for your use case. The nomad-north-gwyddion pl
 Build the Docker image locally:
 
 ```bash
-docker build -f src/nomad_north_gwyddion/north_tools/my_north_tool/Dockerfile \
+docker build -f src/nomad_north_gwyddion/north_tools/gwyddion/Dockerfile \
     -t ghcr.io/crc1415/nomad-north-gwyddion:latest .
 ```
 

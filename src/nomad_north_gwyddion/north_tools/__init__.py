@@ -1,24 +1,30 @@
 from nomad.config.models.north import NORTHTool
 from nomad.config.models.plugins import NORTHToolEntryPoint
 
-my_north_tool = NORTHTool(
+gwyddion_north_tool = NORTHTool(
     short_description='Jupyter Notebook server in NOMAD NORTH for NOMAD plugin nomad-north-gwyddion.',
     image='ghcr.io/crc1415/nomad-north-gwyddion:main',
-    description='Jupyter Notebook server in NOMAD NORTH for NOMAD plugin nomad-north-gwyddion.',
+    description="""### **Gwyddion**:
+
+    [Gwyddion is scanning probe microscopy data processing software.](https://gwyddion.net/)
+
+    [Research article about the software](https://doi.org/10.2478/s11534-011-0096-2)
+
+    [Supported file types v2.71](https://gwyddion.net/documentation/user-guide-en/file-formats.html)""",
     external_mounts=[],
-    file_extensions=['ipynb'],
-    icon='logo/jupyter.svg',
+    file_extensions=['dm4', 'tif', 'tiff', 'wip', 'wit', 'spm', 'ibw'],
+    icon='https://raw.githubusercontent.com/CRC1415/nomad-north-gwyddion/refs/heads/main/src/nomad_north_gwyddion/north_tools/gwyddion/gwyddion.png',
     image_pull_policy='Always',
-    default_url='/lab',
+    default_url='/desktop',
     maintainer=[{'email': 'ron.dockhorn@tu-dresden.de', 'name': 'Ron Dockhorn'}],
     mount_path='/home/jovyan',
     path_prefix='lab/tree',
     privileged=False,
     with_path=True,
-    display_name='my_north_tool',
+    display_name='gwyddion',
 )
 
-north_entry_point = NORTHToolEntryPoint(
-    id_url_safe='nomad-north-gwyddion-my-north-tool',
-    north_tool=my_north_tool,
+gwyddion = NORTHToolEntryPoint(
+    id_url_safe='gwyddion',
+    north_tool=gwyddion_north_tool,
 )
