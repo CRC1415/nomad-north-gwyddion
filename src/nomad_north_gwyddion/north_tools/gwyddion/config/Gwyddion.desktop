@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Gwyddion
-Exec=/home/jovyan/gwyddion/VESTA-gtk3/VESTA
-Path=/home/jovyan/gwyddion
+Exec=/usr/bin/gwyddion
+Path=/usr/bin
 Terminal=false
 StartupNotify=false 
