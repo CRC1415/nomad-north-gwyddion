@@ -36,11 +36,12 @@ dev = [
     "ruff",
     "pytest",
     "structlog",
-    "mkdocs",
-    "mkdocs-material==8.1.1",
+    "mkdocs<2",
+    "mkdocs-material",
     "pymdown-extensions",
     "mkdocs-click",
     "pytest-asyncio",
+    "cruft"
 ]
 [dependency-groups]
 north = [
