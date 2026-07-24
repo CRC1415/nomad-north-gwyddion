@@ -10,13 +10,13 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 USER root
 
-RUN apt update \
- && apt install --no-install-recommends -y \
-      wget \
-      libgl1 \
-      libglu1-mesa \
-      libglu1-mesa-dev \
- && rm -rf /var/lib/apt/lists/*
+# RUN apt update \
+#  && apt install --no-install-recommends -y \
+#       wget \
+#       libgl1 \
+#       libglu1-mesa \
+#       libglu1-mesa-dev \
+#  && rm -rf /var/lib/apt/lists/*
 
 # See: https://github.com/AFM-SPM/gwyddion-python
 # Install main packages
@@ -35,11 +35,6 @@ USER ${NB_UID}
 
 WORKDIR "${HOME}/gwyddion"
 
-# 3.5.8 is the latest version, was released in 2022, maybe feature complete
-#RUN wget https://jp-minerals.org/vesta/archives/3.5.8/VESTA-gtk3.tar.bz2 \
-# && tar -xvf VESTA-gtk3.tar.bz2 \
-# && rm -f VESTA-gtk3.tar.bz2
-
-WORKDIR "${HOME}"
+# WORKDIR "${HOME}"
 
 COPY --chown=${NB_UID}:${NB_GID} "src/nomad_north_gwyddion/north_tools/gwyddion/config/Gwyddion.desktop" "${HOME}/.config/autostart/Gwyddion.desktop"
