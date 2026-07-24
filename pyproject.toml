@@ -14,7 +14,8 @@ classifiers = [
 ]
 name = "nomad-north-gwyddion"
 description = "NOMAD NORTH plugin for Gwyddion (scanning probe microscopy data processing software)"
-version = "0.1.0"
+# version = "0.1.0"
+dynamic = ["version"]
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
