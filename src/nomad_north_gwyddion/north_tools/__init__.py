@@ -2,7 +2,7 @@ from nomad.config.models.north import NORTHTool
 from nomad.config.models.plugins import NorthToolEntryPoint
 
 gwyddion_north_tool = NORTHTool(
-    short_description='Jupyter Notebook server in NOMAD NORTH for NOMAD plugin nomad-north-gwyddion.',
+    short_description='Use Gwyddion as scanning probe microscopy data processing software.',
     image='ghcr.io/crc1415/nomad-north-gwyddion:main',
     description="""### **Gwyddion**:
 

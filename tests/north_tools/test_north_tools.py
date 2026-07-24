@@ -2,7 +2,6 @@ def test_importing_north_tool():
     # this will raise an exception if pydantic model validation fails
     from nomad_north_gwyddion.north_tools import gwyddion
 
-    expected_id = 'nomad-north-gwyddion-my-north-tool'
     assert (
         gwyddion.id_url_safe == 'gwyddion'
         or gwyddion.id == 'nomad-north-gwyddion'
