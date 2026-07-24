@@ -138,7 +138,7 @@ where = ["src"]
 
 [tool.setuptools_scm]
 version_scheme = "no-guess-dev"
-local_scheme = "node-and-date"
+local_scheme = "no-local-version" # "node-and-date"
 
 [project.entry-points.'nomad.plugin']
 gwyddion = "nomad_north_gwyddion.north_tools:gwyddion"
