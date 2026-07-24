@@ -12,6 +12,9 @@ jobs:
   build-docker-image:
     uses: ./.github/workflows/publish_north.yml
     secrets: inherit
+    permissions:
+      contents: read
+      packages: write
 
   build:
     name: Build Package
