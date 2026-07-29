@@ -1,6 +1,6 @@
 # gwyddion - NORTH tool
 
-This directory contains the configuration and a minimal Dockerfile template for defining a NORTH (NOMAD Remote Tools Hub) tool.
+This directory contains the configuration and the Dockerfile for defining the Gwyddion NORTH (NOMAD Remote Tools Hub) tool.
 
 ## Quick start
 
@@ -8,22 +8,14 @@ The gwyddion NORTH tool provides a containerized environment defined in `NORTHto
 
 ## Base Image
 
-This tool uses a pre-built base image that includes the NOMAD NORTH environment. You can choose between two base images:
+This tool uses a pre-built base image `**nomad-north-desktop-base**` called that includes a basic Desktop-based environment. You can find more information here:
 
-1. **nomad-north-jupyter** — JupyterLab-based environment
-   - Repository: https://github.com/FAIRmat-NFDI/nomad-north-jupyter
-   - Image: `ghcr.io/fairmat-nfdi/nomad-north-jupyter:main`
-
-2. **nomad-north-desktop-base** — Desktop-based environment
-   - Repository: https://github.com/FAIRmat-NFDI/nomad-north-desktop-base
-   - Image: `ghcr.io/fairmat-nfdi/nomad-north-desktop-base:main`
-
-Select the appropriate base image for your use case. The nomad-north-gwyddion plugin can be installed on top of your chosen base image during the Docker build process (for this you need to extend the Dockerfile).
-
+- Repository: https://github.com/FAIRmat-NFDI/nomad-north-desktop-base
+- Image: `ghcr.io/fairmat-nfdi/nomad-north-desktop-base:main`
 
 ## Building and testing
 
-Build the Docker image locally:
+Build the Docker image locally (from the package root):
 
 ```bash
 docker build -f src/nomad_north_gwyddion/north_tools/gwyddion/Dockerfile \

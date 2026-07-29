@@ -6,7 +6,7 @@ gwyddion_north_tool = NORTHTool(
     image='ghcr.io/fairmat-nfdi/nomad-north-gwyddion:main',
     description="""### **Gwyddion**:
 
-    [Gwyddion is scanning probe microscopy data processing software.](https://gwyddion.net/)
+    [Gwyddion is a Scanning Probe Microscopy data processing software.](https://gwyddion.net/)
 
     [Research article about the software](https://doi.org/10.2478/s11534-011-0096-2)
 

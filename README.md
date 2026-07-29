@@ -1,98 +1,22 @@
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+![](https://github.com/FAIRmat-NFDI/nomad-north-gwyddion/actions/workflows/actions.yml/badge.svg)
+![](https://github.com/FAIRmat-NFDI/nomad-north-gwyddion/actions/workflows/publish.yml/badge.svg)
+![](https://github.com/FAIRmat-NFDI/nomad-north-gwyddion/actions/workflows/mkdocs-deploy.yml/badge.svg)
+![](https://img.shields.io/pypi/pyversions/nomad-north-gwyddion)
+![](https://img.shields.io/pypi/l/nomad-north-gwyddion)
+![](https://img.shields.io/pypi/v/nomad-north-gwyddion)
+
 # nomad-north-gwyddion
 
-NOMAD NORTH plugin for Gwyddion (scanning probe microscopy data processing software)
+A NOMAD NORTH plugin for [Gwyddion](https://gwyddion.net/), a free scanning probe microscopy data processing software.
 
 This `nomad` plugin was generated with `Cookiecutter` along with `@nomad`'s [`cookiecutter-nomad-plugin`](https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin) template.
 
-## Development
+## Docs
 
-If you want to develop locally this plugin, clone the project and in the plugin folder, create a virtual environment (you can use Python 3.11 or 3.12):
-```sh
-git clone https://github.com/FAIRmat-NFDI/nomad-north-gwyddion.git
-cd nomad-north-gwyddion
-python3.12 -m venv .pyenv
-source .pyenv/bin/activate
-```
-
-Make sure to have `pip` upgraded:
-```sh
-pip install --upgrade pip
-```
-
-We recommend installing `uv` for fast pip installation of the packages:
-```sh
-pip install uv
-```
-
-Install the `nomad-lab` package:
-```sh
-uv pip install -e '.[dev]'
-```
-
-### Run the tests
-
-You can run locally the tests:
-```sh
-python -m pytest -sv tests
-```
-
-where the `-s` and `-v` options toggle the output verbosity.
-
-Our CI/CD pipeline produces a more comprehensive test report using the `pytest-cov` package. You can generate a local coverage report:
-```sh
-uv pip install pytest-cov
-python -m pytest --cov=src tests
-```
-
-### Run linting and auto-formatting
-
-We use [Ruff](https://docs.astral.sh/ruff/) for linting and formatting the code. Ruff auto-formatting is also a part of the GitHub workflow actions. You can run locally:
-```sh
-ruff check .
-ruff format . --check
-```
-
-### Debugging
-
-For interactive debugging of the tests, use `pytest` with the `--pdb` flag. We recommend using an IDE for debugging, e.g., _VSCode_. If that is the case, add the following snippet to your `.vscode/launch.json`:
-```json
-{
-  "configurations": [
-      {
-        "name": "<descriptive tag>",
-        "type": "debugpy",
-        "request": "launch",
-        "cwd": "${workspaceFolder}",
-        "program": "${workspaceFolder}/.pyenv/bin/pytest",
-        "justMyCode": true,
-        "env": {
-            "_PYTEST_RAISE": "1"
-        },
-        "args": [
-            "-sv",
-            "--pdb",
-            "<path-to-plugin-tests>",
-        ]
-    }
-  ]
-}
-```
-
-where `<path-to-plugin-tests>` must be changed to the local path to the test module to be debugged.
-
-The settings configuration file `.vscode/settings.json` automatically applies the linting and formatting upon saving the modified file.
-
-### Documentation on Github pages
-
-To view the documentation locally, install the related packages using:
-```sh
-uv run --python .pyenv/bin/python mkdocs serve
-```
-
-Run the documentation server:
-```sh
-mkdocs serve
-```
+More information about this plugin is available in the [documentation](https://fairmat-nfdi.github.io/nomad-north-gwyddion/), including how to
+[install](https://fairmat-nfdi.github.io/nomad-north-gwyddion/how_to/install_this_plugin/) and
+[contribute to](https://fairmat-nfdi.github.io/nomad-north-gwyddion/how_to/contribute_to_this_plugin/) this plugin.
 
 ## Adding this plugin to NOMAD
 
@@ -109,7 +33,6 @@ Read the [NOMAD plugin documentation](https://nomad-lab.eu/prod/v1/staging/docs/
 We now recommend using the dedicated [`nomad-distro-dev`](https://github.com/FAIRmat-NFDI/nomad-distro-dev) repository to simplify the process. Please refer to that repository for detailed instructions.
 
 ## Publish note
-In the [GitHub actions workflow](./.github/workflows/publish.yml) for publishing the nomad-north-gwyddion plugin to PyPI, we commented out the `deploy` job . If you want to publish the plugin to `PyPI`, you need to set up your project in `PyPI`. There are several online tutorials on publishing a Python package to PyPI, e.g., [How to Publish a Python Package to PyPI](https://realpython.com/pypi-publish-python-package/). After that, you can uncomment the `deploy` job in the workflow file and push the changes to GitHub. The workflow will be triggered and the package will be published to `PyPI` when you create a new release on GitHub.
 
 In our Python package publishing workflow, before building the package, we update the image tag in the [NORTHTool](./src/nomad_north_gwyddion/north_tools/__init__.py) entry point to the latest release version of the image (e.g., `v0.1.5`), and then publish the package to PyPI.
 
