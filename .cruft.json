@@ -4,9 +4,9 @@
   "checkout": null,
   "context": {
     "cookiecutter": {
-      "full_name": "Ron Dockhorn",
-      "email": "ron.dockhorn@tu-dresden.de",
-      "github_username": "CRC1415",
+      "full_name": "Lukas Pielsticker",
+      "email": "lukas.pielsticker@physik.hu-berlin.de",
+      "github_username": "FAIRmat-NFDI",
       "plugin_name": "nomad-north-gwyddion",
       "module_name": "nomad_north_gwyddion",
       "short_description": "NOMAD NORTH plugin for Gwyddion (scanning probe microscopy data processing software)",

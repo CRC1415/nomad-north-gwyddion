@@ -6,7 +6,7 @@ on:
 
 env:
   PYTHON_VERSION: 3.12
-  IMAGE: "ghcr.io/crc1415/nomad-north-gwyddion"
+  IMAGE: "ghcr.io/fairmat-nfdi/nomad-north-gwyddion"
 
 jobs:
   build-docker-image:

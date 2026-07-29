@@ -21,9 +21,10 @@ readme = "README.md"
 requires-python = ">=3.11"
 authors = [
     { name = "Ron Dockhorn", email = "ron.dockhorn@tu-dresden.de" },
+    { name = "Lukas Pielsticker", email = "lukas.pielsticker@physik.hu-berlin.de" },
 ]
 maintainers = [
-    { name = "Ron Dockhorn", email = "ron.dockhorn@tu-dresden.de" },
+    { name = "Lukas Pielsticker", email = "lukas.pielsticker@physik.hu-berlin.de" },
 ]
 license = { file = "LICENSE" }
 dependencies = [
@@ -44,7 +45,8 @@ dev = [
     "pymdown-extensions",
     "mkdocs-click",
     "pytest-asyncio",
-    "cruft"
+    "cruft",
+    "prek",
 ]
 [dependency-groups]
 north = [
@@ -146,3 +148,10 @@ gwyddion = "nomad_north_gwyddion.north_tools:gwyddion"
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues
 skip = [".github/*"]
+
+[tool.mypy]
+strict = false
+ignore_missing_imports = true
+follow_imports = "silent"
+no_strict_optional = true
+disable_error_code = "import, import-untyped, annotation-unchecked"

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: 'nomad-north-gwyddion: A NOMAD plugin for ...'
-version: 0.1.0
+version: 0.1.6
 message:
   If you use this software, please cite it using the
   metadata from this file.
@@ -8,14 +8,25 @@ type: software
 authors:
   - given-names: Ron
     family-names: Dockhorn
-    orcid: 'https://orcid.org/0000-0000-0000-0000'
+    orcid: 'https://orcid.org/0000-0002-5268-5430'
+  - given-names: Lukas
+    family-names: Pielsticker
+    orcid: 'https://orcid.org/0000-0001-9361-8333'  
 doi: 10.5281/zenodo.0000000
-repository-code: https://github.com/CRC1415/nomad-north-gwyddion
+repository-code: https://github.com/FAIRmat-NFDI/nomad-north-gwyddion
 url: https://zenodo.org/records/0000000
 keywords:
-  - keyword1
+  - NOMAD
+  - NORTH
+  - Gwyddion
+  - Scanning Probe Microscopy
 abstract:
-  This is a template for a CITATION.cff file. Please edit the fields accordingly.
+  nomad-north-gwyddion is a nomad-north-desktop-base NORTH tool plugin 
+  for NOMAD (https://nomad-lab.eu/nomad-lab/).
+
+  The work is funded by the Deutsche Forschungsgemeinschaft 
+  (DFG, German Research Foundation) - 460197019 (FAIRmat)
+  (https://gepris.dfg.de/gepris/projekt/460197019?language=en).
 license: MIT
 funding:
   - name: Funding Agency

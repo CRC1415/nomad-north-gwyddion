@@ -8,7 +8,7 @@ This `nomad` plugin was generated with `Cookiecutter` along with `@nomad`'s [`co
 
 If you want to develop locally this plugin, clone the project and in the plugin folder, create a virtual environment (you can use Python 3.11 or 3.12):
 ```sh
-git clone https://github.com/CRC1415/nomad-north-gwyddion.git
+git clone https://github.com/FAIRmat-NFDI/nomad-north-gwyddion.git
 cd nomad-north-gwyddion
 python3.12 -m venv .pyenv
 source .pyenv/bin/activate
@@ -124,4 +124,5 @@ We use [`cruft`](https://github.com/cruft/cruft) to update the project based on 
 ## Main contributors
 | Name | E-mail     |
 |------|------------|
+| Lukas Pielsticker | [lukas.pielsticker@physik.hu-berlin.de](mailto:lukas.pielsticker@physik.hu-berlin.de)
 | Ron Dockhorn | [ron.dockhorn@tu-dresden.de](mailto:ron.dockhorn@tu-dresden.de)

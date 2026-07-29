@@ -1,8 +1,8 @@
 site_name: nomad-north-gwyddion
 site_description: NOMAD NORTH plugin for Gwyddion (scanning probe microscopy data processing software)
-site_author: Ron Dockhorn
+site_author: Lukas Pielsticker
 
-repo_url: https://github.com/CRC1415/nomad-north-gwyddion
+repo_url: https://github.com/FAIRmat-NFDI/nomad-north-gwyddion
 edit_uri: ""
 
 nav:

@@ -27,13 +27,13 @@ Build the Docker image locally:
 
 ```bash
 docker build -f src/nomad_north_gwyddion/north_tools/gwyddion/Dockerfile \
-    -t ghcr.io/crc1415/nomad-north-gwyddion:latest .
+    -t ghcr.io/fairmat-nfdi/nomad-north-gwyddion:latest .
 ```
 
 Test the image (for jupyter notebook image):
 
 ```bash
-docker run -p 8888:8888 ghcr.io/crc1415/nomad-north-gwyddion:latest
+docker run -p 8888:8888 ghcr.io/fairmat-nfdi/nomad-north-gwyddion:latest
 ```
 
 Access JupyterLab at `http://localhost:8888`.
