@@ -16,7 +16,9 @@ gwyddion_north_tool = NORTHTool(
     icon='https://raw.githubusercontent.com/fairmat-nfdi/nomad-north-gwyddion/refs/heads/main/src/nomad_north_gwyddion/north_tools/gwyddion/gwyddion.png',
     image_pull_policy='Always',
     default_url='/desktop',
-    maintainer=[{'email': 'lukas.pielsticker@physik.hu-berlin.de', 'name': 'Lukas Pielsticker'}],
+    maintainer=[
+        {'email': 'lukas.pielsticker@physik.hu-berlin.de', 'name': 'Lukas Pielsticker'}
+    ],
     mount_path='/home/jovyan',
     path_prefix='lab/tree',
     privileged=False,

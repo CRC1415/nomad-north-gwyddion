@@ -1,18 +1,19 @@
-# Welcome to the `nomad-north-gwyddion` documentation
+# Welcome to the nomad-north-gwyddion documentation
 
-NOMAD NORTH plugin for Gwyddion (scanning probe microscopy data processing software)
+`nomad-north-gwyddion` is a NOMAD NORTH plugin that packages [Gwyddion](https://gwyddion.net/){:target="_blank" rel="noopener"}, a free scanning probe microscopy (SPM) data processing software, as a ready-to-launch desktop tool inside a NOMAD Oasis.
 
 ## Introduction
 
-!!! note "Attention"
-    TODO
+[Gwyddion](https://gwyddion.net/){:target="_blank" rel="noopener"} is an open-source application for visualizing and analyzing data from scanning probe microscopy techniques (AFM, STM, and related methods), as well as some other 2D data such as SEM or profilometry images. See the [research article about the software](https://doi.org/10.2478/s11534-011-0096-2){:target="_blank" rel="noopener"} for background.
+
+This plugin registers Gwyddion as a NORTH tool: a full desktop environment, built on FAIRmat's [`nomad-north-desktop-base`](https://github.com/FAIRmat-NFDI/nomad-north-desktop-base){:target="_blank" rel="noopener"} image, that a NOMAD Oasis can launch directly against files in an upload.
 
 <div markdown="block" class="home-grid">
 <div markdown="block">
 
 ### Tutorial
 
-TODO
+A short walkthrough of launching Gwyddion on a file inside a NOMAD Oasis.
 
 - [Tutorial](tutorial/tutorial.md)
 
@@ -23,10 +24,10 @@ TODO
 
 How-to guides provide step-by-step instructions for a wide range of tasks, with the overarching topics:
 
-- [Install this plugin](how_to/install_this_plugin.md)
-- [Use this plugin](how_to/use_this_plugin.md)
-- [Contribute to this plugin](how_to/contribute_to_this_plugin.md)
-- [Contribute to the documentation](how_to/contribute_to_the_documentation.md)
+- [How-to guides > Install this Plugin](how_to/install_this_plugin.md)
+- [How-to guides > Use this Plugin](how_to/use_this_plugin.md)
+- [How-to guides > Contribute to this Plugin](how_to/contribute_to_this_plugin.md)
+- [How-to guides > Contribute to the Documentation](how_to/contribute_to_the_documentation.md)
 
 </div>
 
@@ -34,15 +35,14 @@ How-to guides provide step-by-step instructions for a wide range of tasks, with 
 
 ### Explanation
 
-The explanation [section](explanation/explanation.md) provides background knowledge on this plugin.
+The [Explanation](explanation/explanation.md) section covers what a NORTH tool is in general and how this particular one is built.
 
 </div>
 <div markdown="block">
 
 ### Reference
 
-The reference [section](reference/references.md) includes all CLI commands and arguments, all configuration options,
-the possible schema annotations and their arguments, and a glossary of used terms.
+The [Reference](reference/references.md) section lists the tool's configuration (file extensions, mount path, image) and the project's maintainers.
 
 </div>
 </div>
