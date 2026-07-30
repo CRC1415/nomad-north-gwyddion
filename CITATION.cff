@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: 'nomad-north-gwyddion: A NOMAD plugin for ...'
+title: 'nomad-north-gwyddion: NOMAD NORTH plugin for Gwyddion'
 version: 0.2.1
 message:
   If you use this software, please cite it using the
@@ -12,9 +12,10 @@ authors:
   - given-names: Lukas
     family-names: Pielsticker
     orcid: 'https://orcid.org/0000-0001-9361-8333'  
-doi: 10.5281/zenodo.0000000
+doi: '10.5281/zenodo.21678165'
 repository-code: https://github.com/FAIRmat-NFDI/nomad-north-gwyddion
-url: https://zenodo.org/records/0000000
+url: https://zenodo.org/records/21679455
+date-released: '2026-07-29'
 keywords:
   - NOMAD
   - NORTH
@@ -22,12 +23,20 @@ keywords:
   - Scanning Probe Microscopy
 abstract:
   nomad-north-gwyddion is a nomad-north-desktop-base NORTH tool plugin 
-  for NOMAD (https://nomad-lab.eu/nomad-lab/).
+  for NOMAD (https://nomad-lab.eu/nomad-lab/).  
 
-  The work is funded by the Deutsche Forschungsgemeinschaft 
-  (DFG, German Research Foundation) - 460197019 (FAIRmat)
-  (https://gepris.dfg.de/gepris/projekt/460197019?language=en).
+  The work is funded by the Deutsche Forschungsgemeinschaft  
+  (DFG, German Research Foundation) - 460197019 (FAIRmat)  (https://gepris.dfg.de/project/460197019?lang=en)  
+  and  
+  (DFG, German Research Foundation) - 417590517 (CRC1415)  (https://gepris.dfg.de/project/417590517?lang=en).
 license: MIT
 funding:
-  - name: Funding Agency
-    award: 123456
+  - name: Deutsche Forschungsgemeinschaft
+    award-number: 460197019
+    title: FAIRmat - FAIR Data Infrastructure for Condensed-Matter Physics and the Chemical Physics of Solids
+    award-uri: https://gepris.dfg.de/project/460197019?lang=en
+  - name: Deutsche Forschungsgemeinschaft
+    award-number: 417590517
+    title: CRC1415 - SFB 1415 Chemistry of Synthetic Two-Dimensional Materials
+    award-uri: https://gepris.dfg.de/project/417590517?lang=en
+

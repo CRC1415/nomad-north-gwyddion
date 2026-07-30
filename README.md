@@ -5,6 +5,7 @@
 ![](https://img.shields.io/pypi/pyversions/nomad-north-gwyddion)
 ![](https://img.shields.io/pypi/l/nomad-north-gwyddion)
 ![](https://img.shields.io/pypi/v/nomad-north-gwyddion)
+[![DOI with Zenodo](https://img.shields.io/badge/DOI-10.5281/zenodo.21678165-1073c8?labelColor=000000)](https://doi.org/10.5281/zenodo.21678165)
 
 # nomad-north-gwyddion
 
